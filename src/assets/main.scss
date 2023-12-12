@@ -5,6 +5,7 @@
     font-family: 'Oxygen Mono', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -58,6 +59,7 @@ a {
     --color-card-lemon: 239, 208, 124;
     --color-card-tangerine: 250, 106, 68;
     --color-card-peach: 255, 148, 113;
+    --color-card-red-apple: 255, 86, 86;
     --circle-size: 80%;
     --blending: hard-light;
 }
@@ -223,7 +225,8 @@ a {
     height: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 46px;
+    gap: 64px;
+    overflow-y: auto;
 }
 
 .about-me {
@@ -283,4 +286,50 @@ a {
     gap: 24px;
     padding: 24px;
     overflow: auto;
+}
+
+.bg-peach {
+    background-color: rgb(var(--color-card-peach)) !important;
+}
+
+.bg-orange {
+    background-color: rgb(var(--color-card-orange)) !important;
+}
+
+.bg-tangerine {
+    background-color: rgb(var(--color-card-tangerine)) !important;
+}
+
+.bg-lemon {
+    background-color: rgb(var(--color-card-lemon)) !important;
+}
+
+.bg-red-apple {
+    background-color: rgb(var(--color-card-red-apple)) !important;
+}
+
+
+.border-peach {
+    border-color: rgb(var(--color-card-peach)) !important;
+}
+
+.border-orange {
+    border-color: rgb(var(--color-card-orange)) !important;
+}
+
+.border-tangerine {
+    border-color: rgb(var(--color-card-tangerine)) !important;
+}
+
+.border-lemon {
+    border-color: rgb(var(--color-card-lemon)) !important;
+}
+
+.border-red-apple {
+    border-color: rgb(var(--color-card-red-apple)) !important;
+}
+
+.square {
+    width: 32px;
+    height: 32px;
 }

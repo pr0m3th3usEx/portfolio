@@ -28,7 +28,7 @@ import DownArrow from './components/icons/DownArrow.vue';
 
       <div class="scroll-section">
         <div class="section">
-          <h2 class="subtitle">About Me</h2>
+          <h2 class="subtitle">ABOUT ME</h2>
 
           <div class="about-me grid">
             <div class="picture">
@@ -56,17 +56,127 @@ import DownArrow from './components/icons/DownArrow.vue';
             </div>
           </div>
 
-          <DownArrow animated />
         </div>
       </div>
       <div class="scroll-section">
         <div class="section">
           <h2 class="subtitle">EXPERIENCES</h2>
+
+          <div class="timeline">
+            <div class="container left-container">
+              <div class="icon square bg-red-apple"></div>
+              <div class="text-box bg-red-apple">
+                <h3>Alphabet Inc.</h3>
+                <small>2020-2021</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+                <span class="container-arrow border-red-apple"></span>
+              </div>
+            </div>
+            <div class="container right-container">
+              <div class="icon square bg-peach"></div>
+              <div class="text-box bg-peach">
+                <h3>Tesla Inc.</h3>
+                <small>2019-2020</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+                <span class="container-arrow border-peach"></span>
+              </div>
+            </div>
+            <div class="container left-container">
+              <div class="icon square bg-orange"></div>
+              <div class="text-box bg-orange">
+                <h3>Amazon Inc.</h3>
+                <small>2018-2019</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+                <span class="container-arrow border-orange"></span>
+              </div>
+            </div>
+            <div class="container right-container">
+              <div class="icon square bg-lemon"></div>
+              <div class="text-box bg-lemon">
+                <h3>Netflix Inc.</h3>
+                <small>2017-2018</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+                <span class="container-arrow border-lemon"></span>
+              </div>
+            </div>
+            <div class="container left-container">
+              <div class="icon square bg-tangerine"></div>
+              <div class="text-box bg-tangerine">
+                <h3>Netflix Inc.</h3>
+                <small>2017-2018</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+                <span class="container-arrow border-tangerine"></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="scroll-section">
         <div class="section">
           <h2 class="subtitle">SOME OF MY WORK</h2>
+
+          <h2 class="subtitle">LANGUAGES AND SKILLS</h2>
+
+          <!-- Images
+            Ramify
+            Glowme
+            Colas-captcha
+            DocTripper
+           -->
+
+           <!-- Personal Projects
+
+            -->
+
+          
+
+          <div class="skill-grid">
+            <div class="skill-block">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32462 0C2.38391 0 0 2.38782 0 5.33333V26.6667C0 29.6122 2.38391 32 5.32462 32H26.0087C28.9494 32 31.3333 29.6122 31.3333 26.6667V5.33333C31.3333 2.38781 28.9494 0 26.0087 0H5.32462ZM4.30029 7.1584C4.30029 8.76735 5.51816 9.94313 7.02043 9.94313C8.52293 9.94313 9.74079 8.76735 9.74079 7.1584C9.74079 5.54969 8.52293 4.37256 7.02043 4.37256C5.51816 4.37256 4.30029 5.54969 4.30029 7.1584ZM22.0559 27.5017H26.7741V17.9701C26.7741 13.2627 23.9291 11.6572 21.2963 11.6572C18.8619 11.6572 17.2082 13.2769 16.7516 14.2256V12.0903H12.214V27.5017H16.9322V19.1461C16.9322 16.9183 18.3046 15.8348 19.7047 15.8348C21.0289 15.8348 22.0559 16.6007 22.0559 19.0843V27.5017ZM9.37944 12.0785V27.4898H4.66143V12.0785H9.37944Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <p class="label">Linkedin</p>
+            </div>
+
+            <div class="skill-block">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32462 0C2.38391 0 0 2.38782 0 5.33333V26.6667C0 29.6122 2.38391 32 5.32462 32H26.0087C28.9494 32 31.3333 29.6122 31.3333 26.6667V5.33333C31.3333 2.38781 28.9494 0 26.0087 0H5.32462ZM4.30029 7.1584C4.30029 8.76735 5.51816 9.94313 7.02043 9.94313C8.52293 9.94313 9.74079 8.76735 9.74079 7.1584C9.74079 5.54969 8.52293 4.37256 7.02043 4.37256C5.51816 4.37256 4.30029 5.54969 4.30029 7.1584ZM22.0559 27.5017H26.7741V17.9701C26.7741 13.2627 23.9291 11.6572 21.2963 11.6572C18.8619 11.6572 17.2082 13.2769 16.7516 14.2256V12.0903H12.214V27.5017H16.9322V19.1461C16.9322 16.9183 18.3046 15.8348 19.7047 15.8348C21.0289 15.8348 22.0559 16.6007 22.0559 19.0843V27.5017ZM9.37944 12.0785V27.4898H4.66143V12.0785H9.37944Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <p class="label">Linkedin</p>
+            </div>
+
+            <div class="skill-block">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32462 0C2.38391 0 0 2.38782 0 5.33333V26.6667C0 29.6122 2.38391 32 5.32462 32H26.0087C28.9494 32 31.3333 29.6122 31.3333 26.6667V5.33333C31.3333 2.38781 28.9494 0 26.0087 0H5.32462ZM4.30029 7.1584C4.30029 8.76735 5.51816 9.94313 7.02043 9.94313C8.52293 9.94313 9.74079 8.76735 9.74079 7.1584C9.74079 5.54969 8.52293 4.37256 7.02043 4.37256C5.51816 4.37256 4.30029 5.54969 4.30029 7.1584ZM22.0559 27.5017H26.7741V17.9701C26.7741 13.2627 23.9291 11.6572 21.2963 11.6572C18.8619 11.6572 17.2082 13.2769 16.7516 14.2256V12.0903H12.214V27.5017H16.9322V19.1461C16.9322 16.9183 18.3046 15.8348 19.7047 15.8348C21.0289 15.8348 22.0559 16.6007 22.0559 19.0843V27.5017ZM9.37944 12.0785V27.4898H4.66143V12.0785H9.37944Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <p class="label">Linkedin</p>
+            </div>
+
+            <div class="skill-block">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32462 0C2.38391 0 0 2.38782 0 5.33333V26.6667C0 29.6122 2.38391 32 5.32462 32H26.0087C28.9494 32 31.3333 29.6122 31.3333 26.6667V5.33333C31.3333 2.38781 28.9494 0 26.0087 0H5.32462ZM4.30029 7.1584C4.30029 8.76735 5.51816 9.94313 7.02043 9.94313C8.52293 9.94313 9.74079 8.76735 9.74079 7.1584C9.74079 5.54969 8.52293 4.37256 7.02043 4.37256C5.51816 4.37256 4.30029 5.54969 4.30029 7.1584ZM22.0559 27.5017H26.7741V17.9701C26.7741 13.2627 23.9291 11.6572 21.2963 11.6572C18.8619 11.6572 17.2082 13.2769 16.7516 14.2256V12.0903H12.214V27.5017H16.9322V19.1461C16.9322 16.9183 18.3046 15.8348 19.7047 15.8348C21.0289 15.8348 22.0559 16.6007 22.0559 19.0843V27.5017ZM9.37944 12.0785V27.4898H4.66143V12.0785H9.37944Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <p class="label">Linkedin</p>
+            </div>
+            
+            <div class="skill-block">
+              <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32462 0C2.38391 0 0 2.38782 0 5.33333V26.6667C0 29.6122 2.38391 32 5.32462 32H26.0087C28.9494 32 31.3333 29.6122 31.3333 26.6667V5.33333C31.3333 2.38781 28.9494 0 26.0087 0H5.32462ZM4.30029 7.1584C4.30029 8.76735 5.51816 9.94313 7.02043 9.94313C8.52293 9.94313 9.74079 8.76735 9.74079 7.1584C9.74079 5.54969 8.52293 4.37256 7.02043 4.37256C5.51816 4.37256 4.30029 5.54969 4.30029 7.1584ZM22.0559 27.5017H26.7741V17.9701C26.7741 13.2627 23.9291 11.6572 21.2963 11.6572C18.8619 11.6572 17.2082 13.2769 16.7516 14.2256V12.0903H12.214V27.5017H16.9322V19.1461C16.9322 16.9183 18.3046 15.8348 19.7047 15.8348C21.0289 15.8348 22.0559 16.6007 22.0559 19.0843V27.5017ZM9.37944 12.0785V27.4898H4.66143V12.0785H9.37944Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <p class="label">Linkedin</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -131,5 +241,162 @@ import DownArrow from './components/icons/DownArrow.vue';
     left: 50%;
     bottom: 100px;
     transform: translate(-50%, 0);
+  }
+
+  .timeline {
+    position: relative;
+    margin: 0px auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: #C0C0C0;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+    }
+
+  }
+
+  .container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+
+    .text-box {
+      padding: 20px 30px;
+      background: black;
+      font-size: 15px;
+      position: relative;
+
+      h3 {
+        font-weight: 600;
+      }
+
+      small {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      right: -16px;
+      top: 32px;
+      z-index: 10;
+      border-radius: 50%;
+    }
+  }
+
+  .left-container {
+    left: 0;
+
+    .container-arrow {
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: 28px;
+      z-index: 1;
+      border-top: 15px solid transparent !important;
+      border-bottom: 15px solid transparent !important;
+      border-left: 15px solid black;
+      right: -15px;
+    }
+  }
+
+  .right-container {
+    left: 50%;
+
+    .icon {
+      left: -16px;
+      top: 32px;
+      border-radius: 50%;
+    }
+
+    .container-arrow {
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: 28px;
+      z-index: 1;
+      border-top: 15px solid transparent !important;
+      border-bottom: 15px solid transparent !important;
+      border-right: 15px solid black;
+      left: -15px;
+    }
+  }
+
+
+  .skill-grid {
+    max-width: 1280px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 156px);
+    grid-gap: 16px;
+  }
+  .skill-block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    padding: 32px;
+    background: #383735;
+    
+    .icon {
+      color: white;
+    }
+
+    &:hover {
+      background: #4e4a41; 
+    }
+  }
+
+
+  @media screen and  (max-width: 600px) {
+    .timeline {
+      margin: 50px auto;
+
+      &::after {
+        left: 31px;
+      }
+    }
+
+    .container {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+
+      .text-box {
+        font-size: 14px;
+
+        small {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .right-container {
+      left: 0;
+    }
+    .right-container, .left-container {
+      .icon {
+        left: 16px;
+      }
+
+      .container-arrow {
+        border-right: 15px solid black;
+        border-left: 0;
+        left: -15px;
+      }
+    }
+
+    .skill-grid {
+      width: 100%;
+      padding: 0 16px;
+    }
   }
 </style>
