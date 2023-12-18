@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import Background from './components/foundations/BackgroundComponent.vue';
-import DownArrow from './components/icons/DownArrow.vue';
+import ImageSlider from './components/ImageSlider.vue';
+import sliderImages from './store/constants/sliderImages';
+
 </script>
 
 <template>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
   <main>
     <Background />
     <div class="main-content scroll-container">
@@ -114,21 +119,22 @@ import DownArrow from './components/icons/DownArrow.vue';
 
       <div class="scroll-section">
         <div class="section">
-          <h2 class="subtitle">SOME OF MY WORK</h2>
+          <h2 class="subtitle">PROJECTS & SKILLS</h2>
 
-          <h2 class="subtitle">LANGUAGES AND SKILLS</h2>
 
           <!-- Images
             Ramify
-            Glowme
+            Glowme Pro
+            Glowme Customer
             Colas-captcha
             DocTripper
            -->
 
            <!-- Personal Projects
+            
+          -->
 
-            -->
-
+          <ImageSlider :images="sliderImages" />
           
 
           <div class="skill-grid">
@@ -308,7 +314,7 @@ import DownArrow from './components/icons/DownArrow.vue';
   }
 
   .right-container {
-    left: 50%;
+    left: 50%;  
 
     .icon {
       left: -16px;
@@ -355,8 +361,7 @@ import DownArrow from './components/icons/DownArrow.vue';
     }
   }
 
-
-  @media screen and  (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .timeline {
       margin: 50px auto;
 
