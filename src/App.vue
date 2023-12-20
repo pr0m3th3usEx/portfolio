@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Background from './components/foundations/BackgroundComponent.vue';
+import ContactSection from './components/sections/ContactSection.vue';
 import ImageSlider from './components/widgets/ImageSlider.vue';
 import SkillCard from './components/widgets/SkillCard.vue';
 import sliderImages from './store/constants/sliderImages';
@@ -63,10 +64,6 @@ import skills from './store/constants/skills';
             </div>
           </div>
 
-        </div>
-      </div>
-      <div class="scroll-section">
-        <div class="section">
           <h2 class="subtitle">EXPERIENCES</h2>
 
           <div class="timeline">
@@ -116,32 +113,17 @@ import skills from './store/constants/skills';
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="scroll-section">
-        <div class="section">
           <h2 class="subtitle">PROJECTS & SKILLS</h2>
 
-
-          <!-- Images
-            Ramify
-            Glowme Pro
-            Glowme Customer
-            Colas-captcha
-            DocTripper
-           -->
-
-           <!-- Personal Projects
-            
-          -->
-
           <ImageSlider :images="sliderImages" />
-          
+
 
           <div class="skill-grid">
             <SkillCard v-for="item in skills" :icon="item.icon" :label="item.label" :key="item.label" />
           </div>
+
+          <ContactSection />
         </div>
       </div>
     </div>
