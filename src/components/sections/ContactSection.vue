@@ -2,6 +2,8 @@
 import { useScriptTag } from '@vueuse/core'
 
 useScriptTag('https://assets.calendly.com/assets/external/widget.js');
+
+window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/twilson-freelance/30min', text: 'Reserve a 30 min call', color: '#f8ce38', textColor: '#ffffff', branding: undefined }); }
 </script>
 
 <template>
@@ -9,14 +11,9 @@ useScriptTag('https://assets.calendly.com/assets/external/widget.js');
         <div class="container">
             <div class="left-part">
                 <h2>Contact me</h2>
-                <p>I look forward to make something amazing together !</p>
+                <p>I look forward to hear from you and create something amazing software together !</p>
             </div>
-
-            <div>
-                <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/twilson-freelance/30min" style="min-width:320px; width:100%;height:450px;"></div>
-                <!-- Calendly inline widget end -->
-            </div>
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         </div>
     </div>
 </template>
@@ -25,8 +22,8 @@ useScriptTag('https://assets.calendly.com/assets/external/widget.js');
     .contact-section {
         width: 100%;
         background: black;
-        min-height: 70vh;
-        padding: 32px 0;
+        padding: 48px 0;
+        padding-left: 32px;
         display: flex;
         justify-content: center;
 
