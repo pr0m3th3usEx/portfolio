@@ -8,6 +8,13 @@ import ImageSlider from './components/widgets/ImageSlider.vue';
 import SkillCard from './components/widgets/SkillCard.vue';
 import sliderImages from './store/constants/sliderImages';
 import skills from './store/constants/skills';
+import { ref } from 'vue';
+
+const aboutMeSectionRef = ref<HTMLDivElement>();
+
+const scrollToIntro = () => {
+  aboutMeSectionRef.value?.scrollIntoView({ behavior: 'smooth'});
+}
 
 </script>
 
@@ -26,11 +33,11 @@ import skills from './store/constants/skills';
           <p>I am Thomas, Software Engineer</p>
         </div>
         
-        <button class="button landing-cta">Discover my journey</button>
+        <button class="button landing-cta" @click="scrollToIntro">Discover my journey</button>
       </header>
 
       <div>
-        <div class="section">
+        <div class="section" ref="aboutMeSectionRef">
           <h2 class="subtitle">ABOUT ME</h2>
 
           <AboutMe />
