@@ -2,14 +2,14 @@
 const props = defineProps<{
   variant: '1' | '2' | '3' | '4';
   title: string;
-  description: string;
+  description: string[];
 }>();
 </script>
 
 <template>
   <div class="card" :class="`card-${props.variant}`">
     <h3>{{ props.title }}</h3>
-    <p>{{ props.description }}</p>
+    <p v-for="p in props.description" :key="p">{{ p }}</p>
   </div>
 </template>
 
@@ -20,6 +20,7 @@ const props = defineProps<{
     flex-direction: column;
     gap: 24px;
     padding: 24px;
+    font-size: 16px;
     overflow: auto;
 }
 

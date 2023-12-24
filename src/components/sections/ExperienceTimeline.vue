@@ -24,6 +24,42 @@ const props = withDefaults(defineProps<{
         <span class="container-arrow" :class="`border-${item.color}`"></span>
       </div>
     </div>
+    <!-- <div class="container right-container">
+      <div class="icon square bg-peach"></div>
+      <div class="text-box bg-peach">
+        <h3>Tesla Inc.</h3>
+        <small>2019-2020</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+        <span class="container-arrow border-peach"></span>
+      </div>
+    </div>
+    <div class="container left-container">
+      <div class="icon square bg-orange"></div>
+      <div class="text-box bg-orange">
+        <h3>Amazon Inc.</h3>
+        <small>2018-2019</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+        <span class="container-arrow border-orange"></span>
+      </div>
+    </div>
+    <div class="container right-container">
+      <div class="icon square bg-lemon"></div>
+      <div class="text-box bg-lemon">
+        <h3>Netflix Inc.</h3>
+        <small>2017-2018</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+        <span class="container-arrow border-lemon"></span>
+      </div>
+    </div>
+    <div class="container left-container">
+      <div class="icon square bg-tangerine"></div>
+      <div class="text-box bg-tangerine">
+        <h3>Netflix Inc.</h3>
+        <small>2017-2018</small>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
+        <span class="container-arrow border-tangerine"></span>
+      </div>
+    </div> -->
   </div>
 </template>
 

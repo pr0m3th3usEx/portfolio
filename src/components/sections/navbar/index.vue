@@ -5,7 +5,7 @@
     <div class="nav-header-menu">
       <p><a href="https://github.com/pr0m3th3usEx" target="_blank">Github</a></p>
       <p><a href="https://www.linkedin.com/in/thomas-glowmefr/" target="_blank">Linkedin</a></p>
-      <p><a href="/">Download CV</a></p>
+      <p><a href="https://drive.google.com/file/d/1-1Aqgtbz-nSdYPW-FNr6VHCrFJiL92IZ/view?usp=drive_link" target="_blank">Download CV</a></p>
     </div>
   </nav>
 </template>
