@@ -8,6 +8,7 @@ import ImageSlider from './components/widgets/ImageSlider.vue';
 import SkillCard from './components/widgets/SkillCard.vue';
 import sliderImages from './store/constants/sliderImages';
 import skills from './store/constants/skills';
+import experiences from './store/constants/experiences';
 import { ref } from 'vue';
 
 const aboutMeSectionRef = ref<HTMLDivElement>();
@@ -44,12 +45,13 @@ const scrollToIntro = () => {
 
           <h2 class="subtitle">EXPERIENCES</h2>
           
-          <ExperienceTimeline />
+          <ExperienceTimeline :experiences="experiences"/>
           
           <h2 class="subtitle">A FEW APPS I WORKED ON</h2>
 
           <ImageSlider :images="sliderImages" />
 
+          <h2 class="subtitle">LANGUAGES AND FRAMEWORKS I AM CONFIDENT WITH</h2>
 
           <div class="skill-grid">
             <SkillCard v-for="item in skills" :icon="item.icon" :label="item.label" :key="item.label" />

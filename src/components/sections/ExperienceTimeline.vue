@@ -1,51 +1,27 @@
 <script setup lang="ts">
+type Experience = {
+  title: string;
+  date: string;
+  description: string;
+  color: string;
+}
+const props = withDefaults(defineProps<{
+  experiences: Experience[];
+}>(), {
+  experiences: () => [],
+});
+
 </script>
 
 <template>
   <div class="timeline">
-    <div class="container left-container">
-      <div class="icon square bg-red-apple"></div>
-      <div class="text-box bg-red-apple">
-        <h3>Alphabet Inc.</h3>
-        <small>2020-2021</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
-        <span class="container-arrow border-red-apple"></span>
-      </div>
-    </div>
-    <div class="container right-container">
-      <div class="icon square bg-peach"></div>
-      <div class="text-box bg-peach">
-        <h3>Tesla Inc.</h3>
-        <small>2019-2020</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
-        <span class="container-arrow border-peach"></span>
-      </div>
-    </div>
-    <div class="container left-container">
-      <div class="icon square bg-orange"></div>
-      <div class="text-box bg-orange">
-        <h3>Amazon Inc.</h3>
-        <small>2018-2019</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
-        <span class="container-arrow border-orange"></span>
-      </div>
-    </div>
-    <div class="container right-container">
-      <div class="icon square bg-lemon"></div>
-      <div class="text-box bg-lemon">
-        <h3>Netflix Inc.</h3>
-        <small>2017-2018</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
-        <span class="container-arrow border-lemon"></span>
-      </div>
-    </div>
-    <div class="container left-container">
-      <div class="icon square bg-tangerine"></div>
-      <div class="text-box bg-tangerine">
-        <h3>Netflix Inc.</h3>
-        <small>2017-2018</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at luctus sapien. Donec sed eleifend est. Vestibulum lorem ante, dapibus id imperdiet eget, tincidunt et felis.</p>
-        <span class="container-arrow border-tangerine"></span>
+    <div v-for="(item, index) in props.experiences" class="container" :class="index % 2 == 0 ? 'left-container' : 'right-container'" :key="item.title">
+      <div class="icon square" :class="`bg-${item.color}`"></div>
+      <div class="text-box" :class="`bg-${item.color}`">
+        <h3>{{ item.title }}</h3>
+        <small>{{ item.date }}</small>
+        <p>{{ item.description }}</p>
+        <span class="container-arrow" :class="`border-${item.color}`"></span>
       </div>
     </div>
   </div>
@@ -73,6 +49,7 @@
     padding: 10px 50px;
     position: relative;
     width: 50%;
+    
 
     .text-box {
       padding: 20px 30px;
