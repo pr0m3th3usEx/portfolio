@@ -1,9 +1,11 @@
-<script setup lang="ts">
+<script setup>
 import { useScriptTag } from '@vueuse/core'
 
-useScriptTag('https://assets.calendly.com/assets/external/widget.js');
+useScriptTag('https://assets.calendly.com/assets/external/widget.js', () => {
+    Calendly.initBadgeWidget({ url: 'https://calendly.com/twilson-freelance/30min', text: 'Reserve a 30 min call', color: '#f8ce38', textColor: '#ffffff', branding: undefined });
+});
 
-window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/twilson-freelance/30min', text: 'Reserve a 30 min call', color: '#f8ce38', textColor: '#ffffff', branding: undefined }); }
+window.onload = function() {  }
 </script>
 
 <template>
