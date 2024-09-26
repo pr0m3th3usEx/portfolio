@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Darker_Grotesque } from 'next/font/google';
 import './globals.css';
 
-const darkerGrostesque = localFont({
-  src: './fonts/DarkerGrotesque.ttf',
+const darkerGrostesque = Darker_Grotesque({
+  subsets: ['latin'],
   variable: '--font-darker-grotesque',
-  weight: '300 900',
+  weight: ['300', '500', '600', '900'],
 });
 
 export const metadata: Metadata = {

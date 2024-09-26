@@ -21,6 +21,7 @@ const config: Config = {
             2: '#076DF2',
             3: '#3889F2',
             4: '#579FFD',
+            5: '#0841AF',
           },
           white: {
             1: '#F2F2F2',
@@ -32,7 +33,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        content: ['Dark Grotesque', 'Poppins', 'Arial', 'sans-serif'],
+        content: ['var(--font-darker-grotesque)', 'Arial', 'sans-serif'],
+      },
+      fontSize: {
+        title: '64px',
       },
       borderRadius: {
         base: '5px',
@@ -41,6 +45,12 @@ const config: Config = {
         lg: '16px',
         xl: '24px',
         '2xl': '32px',
+      },
+      minHeight: {
+        '124': '700px',
+      },
+      boxShadow: {
+        base: '0px 4px 4px 0px rgba(0,0,0,0.25)',
       },
     },
   },

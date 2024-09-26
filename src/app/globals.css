@@ -24,3 +24,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.btn-primary {
+  @apply bg-theme-white-1 text-theme-black-1 hover:bg-gray-400;
+}
+
+.btn-secondary {
+  @apply hover:bg-theme-blue-5 bg-theme-blue-2 text-theme-white-1;
+}

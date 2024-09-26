@@ -1,83 +1,53 @@
 import Image from 'next/image';
+import Button from './components/widgets/Button';
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-center text-sm sm:text-left">
-          <li className="mb-2 text-6xl">
-            I build software for developers,
-            <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen w-full p-0 pb-20 font-content sm:p-4">
+      <div className="min-h-124 shadow-base w-full bg-theme-blue-1 sm:rounded-2xl sm:p-16">
+        <div className="flex flex-col gap-6">
+          <nav>
+            <ul>
+              <li>About me</li>
+              <li>Projects</li>
+              <li>Career</li>
+              <li>Skills</li>
+              <li>Contact me</li>
+            </ul>
+          </nav>
 
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838] sm:h-12 sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="flex h-10 items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:min-w-44 sm:px-5 sm:text-base dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="flex justify-center gap-16">
+            <div>
+              <Image src="assets/id_card.svg" alt="Thomas Michel Dev ID Card" width={350} height={500} />
+            </div>
+
+            <div className="flex flex-col gap-8">
+              <div>
+                <h2 className="text-title font-semibold leading-tight text-theme-white-1">
+                  I build software for <span className="text-theme-black-1">developers,</span>
+                </h2>
+                <h2 className="text-title font-semibold leading-tight text-theme-white-1">
+                  I create products for <span className="text-theme-black-1">customers</span>
+                </h2>
+              </div>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <Button
+                  variant="primary"
+                  rightIcon={<Image src="assets/download.svg" alt="Download icon" width={14} height={19} />}
+                >
+                  Download resume
+                </Button>
+                <Button
+                  variant="secondary"
+                  rightIcon={<Image src="assets/right_arrow.svg" alt="Download icon" width={14} height={19} />}
+                >
+                  Take a tour
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="https://nextjs.org/icons/file.svg" alt="File icon" width={16} height={16} />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="https://nextjs.org/icons/window.svg" alt="Window icon" width={16} height={16} />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="https://nextjs.org/icons/globe.svg" alt="Globe icon" width={16} height={16} />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
