@@ -32,3 +32,9 @@ body {
 .btn-secondary {
   @apply hover:bg-theme-blue-5 bg-theme-blue-2 text-theme-white-1;
 }
+
+.nav-item {
+  width: calc(100% / 5);
+  border-radius: calc(999px - 3px);
+  @apply flex-grow-0 p-5 text-center text-lg font-semibold text-white hover:bg-white hover:text-theme-black-1;
+}

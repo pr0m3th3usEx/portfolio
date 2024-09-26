@@ -49,6 +49,12 @@ const config: Config = {
       minHeight: {
         '124': '700px',
       },
+      width: {
+        '124': '700px',
+      },
+      minWidth: {
+        '124': '700px',
+      },
       boxShadow: {
         base: '0px 4px 4px 0px rgba(0,0,0,0.25)',
       },

@@ -1,18 +1,29 @@
 import Image from 'next/image';
 import Button from './components/widgets/Button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="min-h-screen w-full p-0 pb-20 font-content sm:p-4">
-      <div className="min-h-124 shadow-base w-full bg-theme-blue-1 sm:rounded-2xl sm:p-16">
-        <div className="flex flex-col gap-6">
-          <nav>
-            <ul>
-              <li>About me</li>
-              <li>Projects</li>
-              <li>Career</li>
-              <li>Skills</li>
-              <li>Contact me</li>
+      <div className="min-h-124 w-full bg-theme-blue-1 shadow-base sm:rounded-2xl sm:p-8">
+        <div className="flex flex-col items-center gap-12">
+          <nav className="sm:w-124">
+            <ul className="flex justify-center rounded-full border-2 border-white">
+              <Link className="nav-item" href="#about-me">
+                About me
+              </Link>
+              <Link className="nav-item" href="#projects">
+                Projects
+              </Link>
+              <Link className="nav-item" href="#career">
+                Career
+              </Link>
+              <Link className="nav-item" href="#skills">
+                Skills
+              </Link>
+              <Link className="nav-item" href="#contact">
+                Contact me
+              </Link>
             </ul>
           </nav>
 
