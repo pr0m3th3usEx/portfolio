@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Button from './components/widgets/Button';
 import Link from 'next/link';
 import Section from './components/Section';
+import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
   return (
@@ -63,8 +64,8 @@ export default function Home() {
       </div>
 
       <main className="flex flex-col gap-12 sm:px-8">
-        <Section title="About me" orientation="horizontal">
-          <div className="shadow-light w-full rounded-md bg-theme-white-2 p-5 text-lg font-medium">
+        <Section key="about-me" title="About me" orientation="horizontal">
+          <div className="shadow-light w-full rounded-md bg-theme-white-2 p-5 text-xl font-medium">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
               nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
@@ -76,15 +77,44 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section title="Lastest projects">
+        <Section key="projects" title="Lastest projects">
+          <div className="flex w-full flex-col gap-6">
+            <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
+              <ProjectCard
+                projectName="Mana"
+                iconSrc="assets/potion.svg"
+                caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna."
+                externalLink="#"
+              />
+              <ProjectCard
+                projectName="Mana"
+                iconSrc="assets/potion.svg"
+                caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna."
+                externalLink="#"
+              />
+              <ProjectCard
+                projectName="Mana"
+                iconSrc="assets/potion.svg"
+                caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna."
+                externalLink="#"
+              />
+            </div>
+
+            <a
+              href="https://github.com/pr0m3th3usEx"
+              target="_blank"
+              className="text-xl font-semibold text-theme-blue-3 hover:text-theme-blue-1"
+            >
+              View all projects on Github...
+            </a>
+          </div>
+        </Section>
+
+        <Section key="career" title="Experiences">
           <p>Test</p>
         </Section>
 
-        <Section title="Experiences">
-          <p>Test</p>
-        </Section>
-
-        <Section title="Skills">
+        <Section key="skills" title="Skills">
           <p>Test</p>
         </Section>
       </main>
