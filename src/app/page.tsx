@@ -3,6 +3,7 @@ import Button from './components/widgets/Button';
 import Link from 'next/link';
 import Section from './components/Section';
 import ProjectCard from './components/ProjectCard';
+import CareerCard from './components/CareerCard';
 
 export default function Home() {
   return (
@@ -65,7 +66,7 @@ export default function Home() {
 
       <main className="flex flex-col gap-12 sm:px-8">
         <Section key="about-me" title="About me" orientation="horizontal">
-          <div className="shadow-light w-full rounded-md bg-theme-white-2 p-5 text-xl font-medium">
+          <div className="w-full rounded-md bg-theme-white-2 p-5 text-xl font-medium shadow-light">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
               nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
@@ -111,7 +112,39 @@ export default function Home() {
         </Section>
 
         <Section key="career" title="Experiences">
-          <p>Test</p>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
+            <CareerCard
+              iconSrc="/assets/edamame.png"
+              role="Software Engineer"
+              contractType="fulltime"
+              company="EDAMAME Technologies"
+              start={new Date(2024, 2)}
+            />
+            <CareerCard
+              iconSrc="/assets/glowme.png"
+              role="Co-Founder"
+              contractType="fulltime"
+              company="Glowme"
+              start={new Date(2022, 6)}
+              end={new Date(2024, 1)}
+            />
+            <CareerCard
+              iconSrc="https://app.ramify.fr/assets/black_leaf-3e39219c.svg"
+              role="Full Stack Engineer"
+              contractType="fulltime"
+              company="Ramify"
+              start={new Date(2021, 9)}
+              end={new Date(2022, 6)}
+            />
+            <CareerCard
+              iconSrc="https://media.licdn.com/dms/image/v2/C4D0BAQH1WVfu4wTrQw/company-logo_200_200/company-logo_200_200/0/1645110753916/colas_logo?e=1735776000&v=beta&t=GkHYzUvItfbY_Sq5D-hVUKPTXK7CaK5zz2xo4IUdmZI"
+              role="Software Engineer"
+              contractType="contract"
+              company="Colas Group"
+              start={new Date(2021, 11)}
+              end={new Date(2022, 2)}
+            />
+          </div>
         </Section>
 
         <Section key="skills" title="Skills">
