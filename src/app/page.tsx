@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Button from './components/widgets/Button';
 import Link from 'next/link';
+import Section from './components/Section';
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full p-0 pb-20 font-content sm:p-4">
+    <div className="flex min-h-screen w-full flex-col gap-12 p-0 pb-20 font-content sm:p-4">
+      {/* Header  */}
       <div className="min-h-124 w-full bg-theme-blue-1 shadow-base sm:rounded-2xl sm:p-8">
         <div className="flex flex-col items-center gap-12">
           <nav className="sm:w-124">
@@ -59,6 +61,33 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <main className="flex flex-col gap-12 sm:px-8">
+        <Section title="About me" orientation="horizontal">
+          <div className="shadow-light w-full rounded-md bg-theme-white-2 p-5 text-lg font-medium">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
+              nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
+              porttitor sit amet, ultricies nec libero. Nulla facilisi. Suspendisse id erat ex. Vivamus volutpat ante
+              pretium gravida iaculis. Sed mollis mattis neque nec ultricies. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus. Praesent pellentesque elementum orci. Proin mollis erat dictum bibendum rutrum. Cras
+              quis tincidunt nunc, ut vulputate ante. Sed finibus et neque eget mattis.
+            </p>
+          </div>
+        </Section>
+
+        <Section title="Lastest projects">
+          <p>Test</p>
+        </Section>
+
+        <Section title="Experiences">
+          <p>Test</p>
+        </Section>
+
+        <Section title="Skills">
+          <p>Test</p>
+        </Section>
+      </main>
     </div>
   );
 }
