@@ -4,10 +4,13 @@ import Link from 'next/link';
 import Section from './components/Section';
 import ProjectCard from './components/ProjectCard';
 import CareerCard from './components/CareerCard';
+import Footer from './components/Footer';
+import Accordion, { AccordionTab, AccordionTitle } from './components/widgets/accordion';
+import AccordionContent from './components/widgets/accordion/content';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col gap-12 p-0 pb-20 font-content sm:p-4">
+    <div className="flex min-h-screen w-full flex-col gap-12 p-0 font-content sm:p-4 sm:pb-20">
       {/* Header  */}
       <div className="min-h-124 w-full bg-theme-blue-1 shadow-base sm:rounded-2xl sm:p-8">
         <div className="flex flex-col items-center gap-12">
@@ -148,8 +151,17 @@ export default function Home() {
         </Section>
 
         <Section key="skills" title="Skills">
-          <p>Test</p>
+          <Accordion>
+            <AccordionTab key="languages">
+              <AccordionTitle>Software</AccordionTitle>
+              <AccordionContent>
+                <p>Test</p>
+              </AccordionContent>
+            </AccordionTab>
+          </Accordion>
         </Section>
+
+        <Footer />
       </main>
     </div>
   );
