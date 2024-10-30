@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        transitionProperty: {
+          'height': 'height',
+        },
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         theme: {

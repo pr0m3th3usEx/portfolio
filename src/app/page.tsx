@@ -5,8 +5,7 @@ import Section from './components/Section';
 import ProjectCard from './components/ProjectCard';
 import CareerCard from './components/CareerCard';
 import Footer from './components/Footer';
-import Accordion, { AccordionTab, AccordionTitle } from './components/widgets/accordion';
-import AccordionContent from './components/widgets/accordion/content';
+import Accordion from './components/widgets/accordion';
 
 export default function Home() {
   return (
@@ -151,14 +150,30 @@ export default function Home() {
         </Section>
 
         <Section key="skills" title="Skills">
-          <Accordion>
-            <AccordionTab key="languages">
-              <AccordionTitle>Software</AccordionTitle>
-              <AccordionContent>
-                <p>Test</p>
-              </AccordionContent>
-            </AccordionTab>
-          </Accordion>
+          <Accordion
+            items={[
+              {
+                key: 'software',
+                title: 'Software',
+                content: 'Test',
+              },
+              {
+                key: 'database',
+                title: 'Database',
+                content: 'Test',
+              },
+              {
+                key: 'languages',
+                title: 'Languages',
+                content: 'Test',
+              },
+              {
+                key: 'devops',
+                title: 'DevOps & Plaform Engineering',
+                content: 'Test',
+              }
+            ]}
+          />
         </Section>
 
         <Footer />

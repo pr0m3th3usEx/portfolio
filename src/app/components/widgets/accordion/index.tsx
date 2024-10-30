@@ -1,43 +1,35 @@
 'use client';
-import { createContext, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
+import AccordionTab from './tab';
 
-type DValue = {
-  keyOpen: string;
-  onChange: (key: string) => void;
+type AccordionItem = {
+  key: string;
+  title: React.ReactNode;
+  content: React.ReactNode;
 };
 
-const defaultValue = {
-  keyOpen: '',
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  onChange: (_: string) => {},
-};
-
-export const AccordionContext = createContext<DValue>(defaultValue);
-
-const Accordion = ({ children: tabs }: { children: JSX.Element | JSX.Element[] }) => {
-  const [keyOpen, setKeyOpen] = useState<string>('');
+const Accordion = ({ items }: { items: AccordionItem[] }) => {
+  const [index, setIndex] = useState<number | null>(null);
   const onChange = useCallback(
-    (key: string) => {
-      if (Array.isArray(tabs) && tabs.findIndex((tab) => tab.key === key) < 0) {
-        return;
-      }
-      setKeyOpen(keyOpen === key ? '' : key);
+    (newIndex: number) => {
+      setIndex(newIndex === index ? null : newIndex);
     },
-    [tabs, keyOpen],
+    [index],
   );
 
   return (
-    <AccordionContext.Provider
-      value={{
-        keyOpen,
-        onChange,
-      }}
-    >
-      {tabs}
-    </AccordionContext.Provider>
+    <div>
+      {items.map((item, i) => (
+        <AccordionTab
+          key={item.key}
+          isOpen={index === i}
+          title={item.title}
+          content={item.content}
+          onChange={() => onChange(i)}
+        />
+      ))}
+    </div>
   );
 };
 
 export default Accordion;
-export { default as AccordionTab } from './tab';
-export { default as AccordionTitle } from './title';
