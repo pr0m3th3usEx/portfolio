@@ -28,7 +28,7 @@ export default function Home() {
                 Skills
               </Link>
               <Link className="nav-item" href="#contact">
-                Contact me
+                Contact
               </Link>
             </ul>
           </nav>
@@ -174,6 +174,17 @@ export default function Home() {
               }
             ]}
           />
+        </Section>
+
+        <Section>
+          <div className='flex flex-col items-center gap-12'>
+            <div className="flex flex-col items-center gap-6">
+              <h2 className='text-6xl font-bold'>Let's keep in touch</h2>
+              <p className="text-xl">fdLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex nec sapien facilisis, a tempor sapien imperdiet.fd</p>
+            </div>
+
+            <Button variant="secondary">Schedule an appointment</Button>
+          </div>
         </Section>
 
         <Footer />
