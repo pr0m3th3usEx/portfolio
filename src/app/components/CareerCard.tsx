@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import Image from 'next/image';
 import { useMemo } from 'react';
 
@@ -23,7 +24,7 @@ const CareerCard = ({ company, iconSrc, role, contractType, start, end }: Career
   }, [contractType]);
 
   return (
-    <div className="flex flex-col gap-2 rounded-lg bg-theme-white-1 px-6 py-4 shadow-light dark:text-black">
+    <div className="flex flex-col gap-2 rounded-lg bg-theme-white-1 px-6 py-4 shadow-light dark:bg-theme-blue-6 dark:shadow-base">
       <Image src={iconSrc} alt={`${company} logo`} width={32} height={32} />
       <h4 className="text-xl font-semibold">{company}</h4>
       <div>
@@ -32,7 +33,7 @@ const CareerCard = ({ company, iconSrc, role, contractType, start, end }: Career
         </p>
         <p>
           {/* Format Dates */}
-          {start.toDateString()} - {!end ? 'Present' : end.toDateString()}
+          {dayjs(start).format('MM/YYYY')} - {!end ? 'Present' : dayjs(end).format('MM/YYYY')}
         </p>
       </div>
     </div>

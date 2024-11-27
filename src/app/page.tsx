@@ -6,6 +6,8 @@ import CareerCard from './components/CareerCard';
 import Footer from './components/Footer';
 import Accordion from './components/widgets/accordion';
 import Navbar from './components/Navbar';
+import Link from 'next/link';
+import envConstants from '@/utils/config';
 
 export default function Home() {
   return (
@@ -34,13 +36,13 @@ export default function Home() {
                   variant="primary"
                   rightIcon={<Image src="assets/download.svg" alt="Download icon" width={14} height={19} />}
                 >
-                  Download resume
+                  <Link href={envConstants.RESUME_DOWNLOAD_URL}>Download resume</Link>
                 </Button>
                 <Button
                   variant="secondary"
                   rightIcon={<Image src="assets/right_arrow.svg" alt="Download icon" width={14} height={19} />}
                 >
-                  Schedule an appointment
+                  <Link href={envConstants.CALENDAR_URL}>Schedule an appointment</Link>
                 </Button>
               </div>
             </div>
@@ -50,8 +52,8 @@ export default function Home() {
 
       <main className="flex flex-col gap-12 px-2 sm:px-8">
         <Section key="about-me" title="About me">
-          <div className="w-full rounded-md bg-theme-white-1 p-5 text-xl font-medium shadow-light">
-            <p className="dark:text-black">
+          <div className="w-full rounded-md bg-theme-white-1 p-5 text-xl font-medium shadow-light dark:bg-theme-blue-6 dark:shadow-base">
+            <p className="dark:text-theme-white-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
               nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
               porttitor sit amet, ultricies nec libero. Nulla facilisi. Suspendisse id erat ex. Vivamus volutpat ante
@@ -62,7 +64,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section key="projects" title="Lastest projects">
+        <Section key="projects" title="Lastest projects I worked on">
           <div className="flex w-full flex-col gap-6">
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-12">
               <ProjectCard
@@ -103,6 +105,7 @@ export default function Home() {
               contractType="fulltime"
               company="EDAMAME Technologies"
               start={new Date(2024, 2)}
+              end={new Date(2024, 9)}
             />
             <CareerCard
               iconSrc="/assets/glowme.png"
@@ -147,11 +150,23 @@ export default function Home() {
               {
                 key: 'languages',
                 title: 'Languages',
-                content: 'Test',
+                content: (
+                  <p className="text-lg">
+                    <span className='font-bold'>French</span> (Native),{' '}
+                    <span className='font-bold'>English</span> (Fluent),{' '}
+                    <span className='font-bold'>Spanish</span> (Conversational),{' '}
+                    <span className='font-bold'>Korean</span> (Beginner)
+                  </p>
+                ),
               },
               {
                 key: 'devops',
                 title: 'DevOps & Plaform Engineering',
+                content: 'Test',
+              },
+              {
+                key: 'soft',
+                title: 'Soft skills',
                 content: 'Test',
               },
             ]}
@@ -168,7 +183,7 @@ export default function Home() {
               </p>
             </div>
 
-            <Button variant="secondary">Schedule an appointment</Button>
+            <Button variant="secondary"><Link href={envConstants.CALENDAR_URL}>Schedule an appointment</Link></Button>
           </div>
         </Section>
 
