@@ -23,7 +23,7 @@ const CareerCard = ({ company, iconSrc, role, contractType, start, end }: Career
   }, [contractType]);
 
   return (
-    <div className="flex flex-col gap-2 rounded-lg bg-theme-white-2 px-6 py-4 shadow-light">
+    <div className="flex flex-col gap-2 rounded-lg bg-theme-white-2 px-6 py-4 shadow-light dark:text-black">
       <Image src={iconSrc} alt={`${company} logo`} width={32} height={32} />
       <h4 className="text-xl font-semibold">{company}</h4>
       <div>

@@ -69,7 +69,7 @@ export default function Home() {
       <main className="flex flex-col gap-12 sm:px-8">
         <Section key="about-me" title="About me" orientation="horizontal">
           <div className="w-full rounded-md bg-theme-white-2 p-5 text-xl font-medium shadow-light">
-            <p>
+            <p className="dark:text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
               nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
               porttitor sit amet, ultricies nec libero. Nulla facilisi. Suspendisse id erat ex. Vivamus volutpat ante
@@ -171,16 +171,19 @@ export default function Home() {
                 key: 'devops',
                 title: 'DevOps & Plaform Engineering',
                 content: 'Test',
-              }
+              },
             ]}
           />
         </Section>
 
         <Section>
-          <div className='flex flex-col items-center gap-12'>
+          <div className="flex flex-col items-center gap-12">
             <div className="flex flex-col items-center gap-6">
-              <h2 className='text-6xl font-bold'>Let's keep in touch</h2>
-              <p className="text-xl">fdLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex nec sapien facilisis, a tempor sapien imperdiet.fd</p>
+              <h2 className="text-6xl font-bold">Let us keep in touch</h2>
+              <p className="text-xl">
+                fdLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque
+                congue ex nec sapien facilisis, a tempor sapien imperdiet.fd
+              </p>
             </div>
 
             <Button variant="secondary">Schedule an appointment</Button>
