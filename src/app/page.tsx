@@ -139,13 +139,43 @@ export default function Home() {
             items={[
               {
                 key: 'software',
-                title: 'Software',
-                content: 'Test',
+                title: 'Programming languages & Frameworks',
+                content: (
+                  <p className="text-lg">
+                    <span className='font-bold'>Typescript</span>,{' '}
+                    <span className='font-bold'>Rust</span>,{' '}
+                    <span className='font-bold'>Python</span>,{' '}
+                    <span className='font-bold'>Javascript</span>,{' '}
+                    <span className='font-bold'>React</span>,{' '}
+                    <span className='font-bold'>Next.js</span>,{' '}
+                    <span className='font-bold'>Vue</span>,{' '}
+                    <span className='font-bold'>ChakraUI</span>,{' '}
+                    <span className='font-bold'>Tailwind CSS</span>,{' '}
+                    <span className='font-bold'>SWR</span>,{' '}
+                    <span className='font-bold'>Express</span>,{' '}
+                    <span className='font-bold'>NestJS</span>,{' '}
+                    <span className='font-bold'>GraphQL</span>,{' '}
+                    <span className='font-bold'>gRPC</span>,{' '}
+                    <span className='font-bold'>GraphQL</span>,{' '}
+                    <span className='font-bold'>C</span>,{' '}
+                    <span className='font-bold'>Kotlin</span>,{' '}
+                    <span className='font-bold'>Dart</span>,{' '}
+                    <span className='font-bold'>Flutter</span>
+                  </p>
+                ),
               },
               {
                 key: 'database',
                 title: 'Database',
-                content: 'Test',
+                content: (
+                  <p className="text-lg">
+                    <span className='font-bold'>PostgresSQL</span>,{' '}
+                    <span className='font-bold'>MongoDB</span>,{' '}
+                    <span className='font-bold'>DynamoDB</span>,{' '}
+                    <span className='font-bold'>Prisma</span>,{' '}
+                    <span className='font-bold'>Mongoose</span>
+                  </p>
+                ),
               },
               {
                 key: 'languages',
@@ -162,12 +192,29 @@ export default function Home() {
               {
                 key: 'devops',
                 title: 'DevOps & Plaform Engineering',
-                content: 'Test',
+                content: (
+                  <p className="text-lg">
+                    <span className='font-bold'>Docker</span>,{' '}
+                    <span className='font-bold'>Heroku</span>,{' '}
+                    <span className='font-bold'>Vercel</span>,{' '}
+                    <span className='font-bold'>Github Actions</span>,{' '}
+                    <span className='font-bold'>Gitlab CI</span>,{' '}
+                    <span className='font-bold'>GCP</span>,{' '}
+                    <span className='font-bold'>AWS</span>
+                  </p>
+                ),
               },
               {
                 key: 'soft',
                 title: 'Soft skills',
-                content: 'Test',
+                content: (
+                  <p className="text-lg">
+                    <span className='font-bold'>Autonomy</span>,{' '}
+                    <span className='font-bold'>Versatility</span>,{' '}
+                    <span className='font-bold'>Quick learning</span>,{' '}
+                    <span className='font-bold'>Good listening</span>
+                  </p>
+                ),
               },
             ]}
           />
