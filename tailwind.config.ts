@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         transitionProperty: {
-          'height': 'height',
+          height: 'height',
         },
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -50,13 +50,13 @@ const config: Config = {
         '2xl': '32px',
       },
       minHeight: {
-        '124': '700px',
+        '104': '600px',
       },
       width: {
-        '124': '700px',
+        '104': '600px',
       },
       minWidth: {
-        '124': '700px',
+        '104': '600px',
       },
       boxShadow: {
         base: '0px 4px 4px 0px rgba(0,0,0,0.25)',

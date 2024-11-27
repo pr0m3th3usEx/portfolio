@@ -12,7 +12,7 @@ const AccordionHeader = ({
 }) => {
   return (
     <div
-      className={`flex cursor-pointer items-center justify-between bg-theme-white-2 px-4 py-7 hover:bg-gray-50`}
+      className={`flex cursor-pointer items-center justify-between bg-theme-white-2 px-4 py-7 hover:bg-gray-50 dark:bg-theme-white-1`}
       onClick={onChange}
     >
       {typeof children === 'string' ? (

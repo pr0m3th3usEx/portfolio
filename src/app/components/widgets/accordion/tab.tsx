@@ -21,7 +21,7 @@ const AccordionTab = ({ onChange, title, content, isOpen }: AccordionTabProps) =
       {/* AccordionContent */}
       <div
         ref={contentHeight}
-        className={`border-b-2 bg-theme-white-2 transition-[height] duration-500 ease-in-out`}
+        className={`border-b-2 bg-theme-white-2 transition-[height] duration-500 ease-in-out dark:bg-theme-white-1`}
         style={isOpen ? { height: contentHeight.current?.scrollHeight } : { height: '0px' }}
       >
         <div className="px-4 pb-5 pt-2">{content}</div>

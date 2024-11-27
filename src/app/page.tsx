@@ -1,53 +1,35 @@
 import Image from 'next/image';
 import Button from './components/widgets/Button';
-import Link from 'next/link';
 import Section from './components/Section';
 import ProjectCard from './components/ProjectCard';
 import CareerCard from './components/CareerCard';
 import Footer from './components/Footer';
 import Accordion from './components/widgets/accordion';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col gap-12 p-0 font-content sm:p-4 sm:pb-20">
+    <div className="flex min-h-screen w-full border-spacing-3 flex-col gap-12 p-0 font-content sm:p-4 sm:pb-20">
       {/* Header  */}
-      <div className="min-h-124 w-full bg-theme-blue-1 shadow-base sm:rounded-2xl sm:p-8">
-        <div className="flex flex-col items-center gap-12">
-          <nav className="sm:w-124">
-            <ul className="flex justify-center rounded-full border-2 border-white">
-              <Link className="nav-item" href="#about-me">
-                About me
-              </Link>
-              <Link className="nav-item" href="#projects">
-                Projects
-              </Link>
-              <Link className="nav-item" href="#career">
-                Career
-              </Link>
-              <Link className="nav-item" href="#skills">
-                Skills
-              </Link>
-              <Link className="nav-item" href="#contact">
-                Contact
-              </Link>
-            </ul>
-          </nav>
+      <div className="min-h-104 w-full bg-theme-blue-1 pb-12 shadow-base sm:rounded-2xl sm:p-8">
+        <div className="flex h-full w-full flex-col items-center gap-12">
+          <Navbar />
 
-          <div className="flex justify-center gap-16">
-            <div>
+          <div className="flex min-h-full items-center justify-center gap-16">
+            <div className="hidden md:visible">
               <Image src="assets/id_card.svg" alt="Thomas Michel Dev ID Card" width={350} height={500} />
             </div>
 
             <div className="flex flex-col gap-8">
-              <div>
-                <h2 className="text-title font-semibold leading-tight text-theme-white-1">
+              <div className="flex flex-col gap-4">
+                <h2 className="text-center text-5xl font-semibold leading-tight text-theme-white-1 lg:text-title">
                   I build software for <span className="text-theme-black-1">developers,</span>
                 </h2>
-                <h2 className="text-title font-semibold leading-tight text-theme-white-1">
+                <h2 className="text-center text-5xl font-semibold leading-tight text-theme-white-1 lg:text-title">
                   I create products for <span className="text-theme-black-1">customers</span>
                 </h2>
               </div>
-              <div className="flex flex-col gap-4 sm:flex-row">
+              <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
                 <Button
                   variant="primary"
                   rightIcon={<Image src="assets/download.svg" alt="Download icon" width={14} height={19} />}
@@ -58,7 +40,7 @@ export default function Home() {
                   variant="secondary"
                   rightIcon={<Image src="assets/right_arrow.svg" alt="Download icon" width={14} height={19} />}
                 >
-                  Take a tour
+                  Schedule an appointment
                 </Button>
               </div>
             </div>
@@ -66,9 +48,9 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="flex flex-col gap-12 sm:px-8">
-        <Section key="about-me" title="About me" orientation="horizontal">
-          <div className="w-full rounded-md bg-theme-white-2 p-5 text-xl font-medium shadow-light">
+      <main className="flex flex-col gap-12 px-2 sm:px-8">
+        <Section key="about-me" title="About me">
+          <div className="w-full rounded-md bg-theme-white-1 p-5 text-xl font-medium shadow-light">
             <p className="dark:text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
               nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
@@ -82,7 +64,7 @@ export default function Home() {
 
         <Section key="projects" title="Lastest projects">
           <div className="flex w-full flex-col gap-6">
-            <div className="grid grid-cols-1 gap-12 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-12">
               <ProjectCard
                 projectName="Mana"
                 iconSrc="assets/potion.svg"
@@ -179,7 +161,7 @@ export default function Home() {
         <Section>
           <div className="flex flex-col items-center gap-12">
             <div className="flex flex-col items-center gap-6">
-              <h2 className="text-6xl font-bold">Let us keep in touch</h2>
+              <h2 className="text-center text-6xl font-bold">Let us keep in touch</h2>
               <p className="text-xl">
                 fdLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque
                 congue ex nec sapien facilisis, a tempor sapien imperdiet.fd
