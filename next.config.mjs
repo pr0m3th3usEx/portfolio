@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: 'media.licdn.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+        port: '',
+      }
     ],
   },
 };

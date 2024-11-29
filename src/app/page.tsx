@@ -69,22 +69,22 @@ export default function Home() {
           <div className="flex w-full flex-col gap-6">
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-12">
               <ProjectCard
-                projectName="Mana"
-                iconSrc="assets/potion.svg"
-                caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna."
-                externalLink="#"
+                projectName="honojs/middleware"
+                iconSrc="https://avatars.githubusercontent.com/u/98495527?v=4"
+                caption="monorepo for Hono third-party middleware/helpers/wrappers: Maintaining @hono/class-validator middleware"
+                externalLink="https://github.com/honojs/middleware"
               />
               <ProjectCard
-                projectName="Mana"
+                projectName="Koic"
                 iconSrc="assets/potion.svg"
-                caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna."
-                externalLink="#"
+                caption="Connected scarecrow for smart predator repulsion."
+                externalLink="https://github.com/PoCInnovation/Koic"
               />
               <ProjectCard
-                projectName="Mana"
+                projectName="Challenges"
                 iconSrc="assets/potion.svg"
-                caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna."
-                externalLink="#"
+                caption="Job technical tests solutions"
+                externalLink="https://github.com/pr0m3th3usEx/challenges"
               />
             </div>
 
