@@ -51,21 +51,32 @@ export default function Home() {
       </div>
 
       <main className="flex flex-col gap-12 px-2 sm:px-8">
-        <Section key="about-me" title="About me">
+        <Section id="about-me" title="About me">
           <div className="w-full rounded-md bg-theme-white-1 p-5 text-xl font-medium shadow-light dark:bg-theme-blue-6 dark:shadow-base">
             <p className="dark:text-theme-white-1">
-              Hi, I’m Thomas, an <strong>Entrepreneur, Open-Source Contributor, and Software Engineer</strong> with a focus on <strong>Full-Stack Development</strong>, particularly <strong>back-end engineering</strong>. I specialize in crafting innovative <strong>SaaS products</strong>, taking ideas from <strong>0 to 1</strong> with a clear focus on <strong>user-centered applications</strong> that truly make an impact.
-            </p><br />
+              Hi, I’m Thomas, an <strong>Entrepreneur, Open-Source Contributor, and Software Engineer</strong> with a
+              focus on <strong>Full-Stack Development</strong>, particularly <strong>back-end engineering</strong>. I
+              specialize in crafting innovative <strong>SaaS products</strong>, taking ideas from{' '}
+              <strong>0 to 1</strong> with a clear focus on <strong>user-centered applications</strong> that truly make
+              an impact.
+            </p>
+            <br />
             <p className="dark:text-theme-white-1">
-              With a blend of <strong>versatility, problem-solving skills</strong>, and an <strong>international mindset</strong>, I bring a fresh perspective to every project. My quick adaptability ensures I can hit the ground running from day one, seamlessly integrating into your team and tackling complex challenges.
-            </p><br />
+              With a blend of <strong>versatility, problem-solving skills</strong>, and an{' '}
+              <strong>international mindset</strong>, I bring a fresh perspective to every project. My quick
+              adaptability ensures I can hit the ground running from day one, seamlessly integrating into your team and
+              tackling complex challenges.
+            </p>
+            <br />
             <p className="dark:text-theme-white-1">
-              If you're looking for someone to <strong>help develop your product from the ground up</strong>, deliver technical excellence, and create meaningful, user-driven solutions, let’s connect! Together, we can transform your vision into a thriving reality.
+              If you're looking for someone to <strong>help develop your product from the ground up</strong>, deliver
+              technical excellence, and create meaningful, user-driven solutions, let’s connect! Together, we can
+              transform your vision into a thriving reality.
             </p>
           </div>
         </Section>
 
-        <Section key="projects" title="Lastest projects I worked on">
+        <Section id="projects" title="Lastest projects I worked on">
           <div className="flex w-full flex-col gap-6">
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-12">
               <ProjectCard
@@ -98,7 +109,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section key="career" title="Experiences">
+        <Section id="career" title="Experiences">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
             <CareerCard
               iconSrc="/assets/edamame.png"
@@ -135,7 +146,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section key="skills" title="Skills">
+        <Section id="skills" title="Skills">
           <Accordion
             items={[
               {
@@ -143,25 +154,16 @@ export default function Home() {
                 title: 'Programming languages & Frameworks',
                 content: (
                   <p className="text-lg">
-                    <span className='font-bold'>Typescript</span>,{' '}
-                    <span className='font-bold'>Rust</span>,{' '}
-                    <span className='font-bold'>Python</span>,{' '}
-                    <span className='font-bold'>Javascript</span>,{' '}
-                    <span className='font-bold'>React</span>,{' '}
-                    <span className='font-bold'>Next.js</span>,{' '}
-                    <span className='font-bold'>Vue</span>,{' '}
-                    <span className='font-bold'>ChakraUI</span>,{' '}
-                    <span className='font-bold'>Tailwind CSS</span>,{' '}
-                    <span className='font-bold'>SWR</span>,{' '}
-                    <span className='font-bold'>Express</span>,{' '}
-                    <span className='font-bold'>NestJS</span>,{' '}
-                    <span className='font-bold'>GraphQL</span>,{' '}
-                    <span className='font-bold'>gRPC</span>,{' '}
-                    <span className='font-bold'>GraphQL</span>,{' '}
-                    <span className='font-bold'>C</span>,{' '}
-                    <span className='font-bold'>Kotlin</span>,{' '}
-                    <span className='font-bold'>Dart</span>,{' '}
-                    <span className='font-bold'>Flutter</span>
+                    <span className="font-bold">Typescript</span>, <span className="font-bold">Rust</span>,{' '}
+                    <span className="font-bold">Python</span>, <span className="font-bold">Javascript</span>,{' '}
+                    <span className="font-bold">React</span>, <span className="font-bold">Next.js</span>,{' '}
+                    <span className="font-bold">Vue</span>, <span className="font-bold">ChakraUI</span>,{' '}
+                    <span className="font-bold">Tailwind CSS</span>, <span className="font-bold">SWR</span>,{' '}
+                    <span className="font-bold">Express</span>, <span className="font-bold">NestJS</span>,{' '}
+                    <span className="font-bold">GraphQL</span>, <span className="font-bold">gRPC</span>,{' '}
+                    <span className="font-bold">GraphQL</span>, <span className="font-bold">C</span>,{' '}
+                    <span className="font-bold">Kotlin</span>, <span className="font-bold">Dart</span>,{' '}
+                    <span className="font-bold">Flutter</span>
                   </p>
                 ),
               },
@@ -170,11 +172,9 @@ export default function Home() {
                 title: 'Database',
                 content: (
                   <p className="text-lg">
-                    <span className='font-bold'>PostgresSQL</span>,{' '}
-                    <span className='font-bold'>MongoDB</span>,{' '}
-                    <span className='font-bold'>DynamoDB</span>,{' '}
-                    <span className='font-bold'>Prisma</span>,{' '}
-                    <span className='font-bold'>Mongoose</span>
+                    <span className="font-bold">PostgresSQL</span>, <span className="font-bold">MongoDB</span>,{' '}
+                    <span className="font-bold">DynamoDB</span>, <span className="font-bold">Prisma</span>,{' '}
+                    <span className="font-bold">Mongoose</span>
                   </p>
                 ),
               },
@@ -183,10 +183,9 @@ export default function Home() {
                 title: 'Languages',
                 content: (
                   <p className="text-lg">
-                    <span className='font-bold'>French</span> (Native),{' '}
-                    <span className='font-bold'>English</span> (Fluent),{' '}
-                    <span className='font-bold'>Spanish</span> (Conversational),{' '}
-                    <span className='font-bold'>Korean</span> (Beginner)
+                    <span className="font-bold">French</span> (Native), <span className="font-bold">English</span>{' '}
+                    (Fluent), <span className="font-bold">Spanish</span> (Conversational),{' '}
+                    <span className="font-bold">Korean</span> (Beginner)
                   </p>
                 ),
               },
@@ -195,13 +194,10 @@ export default function Home() {
                 title: 'DevOps & Plaform Engineering',
                 content: (
                   <p className="text-lg">
-                    <span className='font-bold'>Docker</span>,{' '}
-                    <span className='font-bold'>Heroku</span>,{' '}
-                    <span className='font-bold'>Vercel</span>,{' '}
-                    <span className='font-bold'>Github Actions</span>,{' '}
-                    <span className='font-bold'>Gitlab CI</span>,{' '}
-                    <span className='font-bold'>GCP</span>,{' '}
-                    <span className='font-bold'>AWS</span>
+                    <span className="font-bold">Docker</span>, <span className="font-bold">Heroku</span>,{' '}
+                    <span className="font-bold">Vercel</span>, <span className="font-bold">Github Actions</span>,{' '}
+                    <span className="font-bold">Gitlab CI</span>, <span className="font-bold">GCP</span>,{' '}
+                    <span className="font-bold">AWS</span>
                   </p>
                 ),
               },
@@ -210,10 +206,8 @@ export default function Home() {
                 title: 'Soft skills',
                 content: (
                   <p className="text-lg">
-                    <span className='font-bold'>Autonomy</span>,{' '}
-                    <span className='font-bold'>Versatility</span>,{' '}
-                    <span className='font-bold'>Quick learning</span>,{' '}
-                    <span className='font-bold'>Good listening</span>
+                    <span className="font-bold">Autonomy</span>, <span className="font-bold">Versatility</span>,{' '}
+                    <span className="font-bold">Quick learning</span>, <span className="font-bold">Good listening</span>
                   </p>
                 ),
               },
@@ -221,16 +215,19 @@ export default function Home() {
           />
         </Section>
 
-        <Section>
+        <Section id="contact">
           <div className="flex flex-col items-center gap-12">
             <div className="flex flex-col items-center gap-6">
               <h2 className="text-center text-6xl font-bold">Let us keep in touch</h2>
               <p className="text-xl">
-                Have a project in mind or just want to say hi? Let’s collaborate and create something extraordinary together.
+                Have a project in mind or just want to say hi? Let’s collaborate and create something extraordinary
+                together.
               </p>
             </div>
 
-            <Button variant="secondary"><Link href={envConstants.CALENDAR_URL}>Schedule an appointment</Link></Button>
+            <Button variant="secondary">
+              <Link href={envConstants.CALENDAR_URL}>Schedule an appointment</Link>
+            </Button>
           </div>
         </Section>
 

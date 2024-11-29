@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <>
-      <nav className="sm:w-104 hidden sm:block">
+      <nav className="hidden sm:block sm:w-104">
         <ul className="flex justify-center rounded-full border-2 border-white">
           <Link className="nav-item" href="#about-me">
             About me
