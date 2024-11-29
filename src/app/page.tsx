@@ -54,12 +54,13 @@ export default function Home() {
         <Section key="about-me" title="About me">
           <div className="w-full rounded-md bg-theme-white-1 p-5 text-xl font-medium shadow-light dark:bg-theme-blue-6 dark:shadow-base">
             <p className="dark:text-theme-white-1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque congue ex
-              nec sapien facilisis, a tempor sapien imperdiet. Fusce at odio nisl. Nulla libero ex, semper sit amet
-              porttitor sit amet, ultricies nec libero. Nulla facilisi. Suspendisse id erat ex. Vivamus volutpat ante
-              pretium gravida iaculis. Sed mollis mattis neque nec ultricies. Interdum et malesuada fames ac ante ipsum
-              primis in faucibus. Praesent pellentesque elementum orci. Proin mollis erat dictum bibendum rutrum. Cras
-              quis tincidunt nunc, ut vulputate ante. Sed finibus et neque eget mattis.
+              Hi, I’m Thomas, an <strong>Entrepreneur, Open-Source Contributor, and Software Engineer</strong> with a focus on <strong>Full-Stack Development</strong>, particularly <strong>back-end engineering</strong>. I specialize in crafting innovative <strong>SaaS products</strong>, taking ideas from <strong>0 to 1</strong> with a clear focus on <strong>user-centered applications</strong> that truly make an impact.
+            </p><br />
+            <p className="dark:text-theme-white-1">
+              With a blend of <strong>versatility, problem-solving skills</strong>, and an <strong>international mindset</strong>, I bring a fresh perspective to every project. My quick adaptability ensures I can hit the ground running from day one, seamlessly integrating into your team and tackling complex challenges.
+            </p><br />
+            <p className="dark:text-theme-white-1">
+              If you're looking for someone to <strong>help develop your product from the ground up</strong>, deliver technical excellence, and create meaningful, user-driven solutions, let’s connect! Together, we can transform your vision into a thriving reality.
             </p>
           </div>
         </Section>
@@ -225,8 +226,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-6">
               <h2 className="text-center text-6xl font-bold">Let us keep in touch</h2>
               <p className="text-xl">
-                fdLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae odio magna. Pellentesque
-                congue ex nec sapien facilisis, a tempor sapien imperdiet.fd
+                Have a project in mind or just want to say hi? Let’s collaborate and create something extraordinary together.
               </p>
             </div>
 
