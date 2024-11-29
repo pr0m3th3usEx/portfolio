@@ -69,7 +69,7 @@ export default function Home() {
             </p>
             <br />
             <p className="dark:text-theme-white-1">
-              If you're looking for someone to <strong>help develop your product from the ground up</strong>, deliver
+              If you’re looking for someone to <strong>help develop your product from the ground up</strong>, deliver
               technical excellence, and create meaningful, user-driven solutions, let’s connect! Together, we can
               transform your vision into a thriving reality.
             </p>
