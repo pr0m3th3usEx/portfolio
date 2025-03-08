@@ -54,7 +54,6 @@ export default function Projects() {
                   alt="Project Image"
                   width={800}
                   height={500}
-                  layout="responsive"
                   className="rounded-lg"
                 />
               </div>

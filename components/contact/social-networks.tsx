@@ -1,10 +1,10 @@
-import { HTMLAttributes } from 'react';
+import { type HTMLAttributes } from 'react';
 import Link from 'next/link';
+import { config } from '@/config/constants';
 import DiscordIcon from '@/public/discord.svg';
 import MaltIcon from '@/public/malt.svg';
 import LinkedinIcon from '@/public/linkedin.svg';
 import GithubIcon from '@/public/github.svg';
-import config from '@/config/constants';
 
 export default function SocialNetworks({
   className,

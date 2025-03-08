@@ -1,4 +1,4 @@
-import config from '@/config/constants';
+import { config } from '@/config/constants';
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
 

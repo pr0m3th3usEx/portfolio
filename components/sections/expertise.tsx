@@ -1,8 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { config } from '@/config/constants';
 import { Card, CardContent } from '../ui/card';
 import Tag from '../ui/tag';
-import Link from 'next/link';
-import config from '@/config/constants';
 
 export default function Expertise() {
   return (

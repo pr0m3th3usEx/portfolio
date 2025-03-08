@@ -2,12 +2,12 @@ import EmailContact from '../components/contact/email-contact';
 import SocialNetworks from '../components/contact/social-networks';
 import Header from '../components/header';
 import Footer from '@/components/footer';
-import BeatBehindTheCode from '@/components/sections/beat-behind-the-code';
-import Roles from '@/components/sections/roles';
-import ClientFeedbacks from '@/components/sections/feedback';
-import Expertise from '@/components/sections/expertise';
 import Intro from '@/components/sections/intro';
 import Projects from '@/components/sections/projects';
+import Expertise from '@/components/sections/expertise';
+import Roles from '@/components/sections/roles';
+import ClientFeedbacks from '@/components/sections/feedback';
+import BeatBehindTheCode from '@/components/sections/beat-behind-the-code';
 
 export default function Home() {
   return (

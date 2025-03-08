@@ -1,10 +1,9 @@
 import Tag from './ui/tag';
-import { Download, MapPinned } from 'lucide-react';
-import { Globe } from 'lucide-react';
+import { Download, MapPinned, Globe } from 'lucide-react';
+import { config } from '@/config/constants';
 import { Button } from './ui/button';
 import NavigationBar from './navigation-bar';
 import Link from 'next/link';
-import config from '@/config/constants';
 import Clock from './clock';
 
 export default function Header() {
