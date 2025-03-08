@@ -3,6 +3,9 @@ import { Download, MapPinned } from 'lucide-react';
 import { Globe } from 'lucide-react';
 import { Button } from './ui/button';
 import NavigationBar from './navigation-bar';
+import Link from 'next/link';
+import config from '@/config/constants';
+import Clock from './clock';
 
 export default function Header() {
   return (
@@ -10,10 +13,12 @@ export default function Header() {
       <NavigationBar />
 
       <div className="flex items-center gap-2">
-        <Button variant="default" className="hidden md:flex">
-          <Download size={12} />
-          Resume
-        </Button>
+        <Link href={config.resumeUrl} target="_blank">
+          <Button variant="default" className="hidden md:flex">
+            <Download size={12} />
+            Resume
+          </Button>
+        </Link>
 
         <Tag>
           <MapPinned size={12} />
@@ -23,10 +28,8 @@ export default function Header() {
           <Globe size={12} />
           UTC+2
         </Tag>
-        <Tag>
-          16h38
-          <div className="h-2 w-2 rounded-full bg-green-500"></div>
-        </Tag>
+
+        <Clock />
       </div>
     </header>
   );

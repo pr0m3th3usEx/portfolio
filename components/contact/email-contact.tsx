@@ -1,3 +1,4 @@
+import config from '@/config/constants';
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
 
@@ -12,7 +13,7 @@ export default function EmailContact({
     >
       <Link href="mailto:">
         <p className="vertical-text hover:text-coral-pink tracking-widest">
-          twison.freelance@gmail.com
+          {config.email}
         </p>
       </Link>
     </div>

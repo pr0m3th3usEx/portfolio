@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent } from '../ui/card';
 import Tag from '../ui/tag';
 import Link from 'next/link';
+import config from '@/config/constants';
 
 export default function Expertise() {
   return (
@@ -10,7 +11,7 @@ export default function Expertise() {
         Expertise
       </Tag>
 
-      <Link href="#" target="_blank">
+      <Link href={config.calendarUrl} target="_blank">
         <Card className="bg-card-default hover:bg-foreground hover:text-background cursor-pointer border-none shadow-none transition-colors duration-300">
           <CardContent className="flex aspect-[16/6] flex-col items-center gap-6 p-3">
             <div className="flex w-full justify-between">

@@ -4,6 +4,7 @@ import DiscordIcon from '@/public/discord.svg';
 import MaltIcon from '@/public/malt.svg';
 import LinkedinIcon from '@/public/linkedin.svg';
 import GithubIcon from '@/public/github.svg';
+import config from '@/config/constants';
 
 export default function SocialNetworks({
   className,
@@ -15,16 +16,32 @@ export default function SocialNetworks({
       {...props}
     >
       <div className="flex flex-col items-center gap-6">
-        <Link href="#" className="hover:text-coral-pink">
+        <Link
+          href={config.githubUrl}
+          className="hover:text-coral-pink"
+          target="_blank"
+        >
           <GithubIcon width={24} height={24} />
         </Link>
-        <Link href="#" className="hover:text-coral-pink">
+        <Link
+          href={config.linkedinUrl}
+          className="hover:text-coral-pink"
+          target="_blank"
+        >
           <LinkedinIcon width={24} height={24} />
         </Link>
-        <Link href="#" className="hover:text-coral-pink">
+        <Link
+          href={config.maltUrl}
+          className="hover:text-coral-pink"
+          target="_blank"
+        >
           <MaltIcon width={24} height={24} />
         </Link>
-        <Link href="#" className="hover:text-coral-pink">
+        <Link
+          href={config.discordUrl}
+          className="hover:text-coral-pink"
+          target="_blank"
+        >
           <DiscordIcon width={24} height={24} />
         </Link>
       </div>
