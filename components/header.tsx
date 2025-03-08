@@ -6,7 +6,7 @@ import NavigationBar from './navigation-bar';
 
 export default function Header() {
   return (
-    <header className="flex w-full justify-between">
+    <header className="fixed top-0 flex w-full justify-between px-8 pt-8">
       <NavigationBar />
 
       <div className="flex items-center gap-2">
