@@ -12,7 +12,7 @@ const usePageVisibility = (onRefocus: () => void) => {
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (!document.hidden) {
-        onRefocus(); // Call the function when user refocuses
+        onRefocus();
       }
     };
 

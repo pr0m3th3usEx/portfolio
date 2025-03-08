@@ -1,10 +1,4 @@
-import { Menu } from 'lucide-react';
-import { Button } from './ui/button';
-
+// TODO: Implement NavigationBar component
 export default function NavigationBar() {
-  return (
-    <Button variant="outline">
-      <Menu size={24} />
-    </Button>
-  );
+  return <div className="w-1"></div>;
 }

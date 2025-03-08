@@ -14,7 +14,7 @@ export default function Header() {
 
       <div className="flex items-center gap-2">
         <Link href={config.resumeUrl} target="_blank">
-          <Button variant="default" className="hidden md:flex">
+          <Button variant="default">
             <Download size={12} />
             Resume
           </Button>
