@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #030712;
+  --cool-gray: #858CA2;
+  --light-gray: #B6B4B4;
+  --ultralight-gray: 246, 246, 246;
+  --coral-pink: #FF7761;
+  --goldenrod: #FDC23E;
+  --deep-saffron: #F9A11B;
+  --pale-green: #9BC979;
+  --blue-gray: #0F131A;
+
+  /* Tags */
+  --tag-default: rgb(var(--ultralight-gray));
+  --card-default: rgb(var(--ultralight-gray));
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cool-gray: var(--cool-gray);
+  --color-light-gray: var(--light-gray);
+  --color-ultralight-gray: var(--ultralight-gray);
+  --color-coral-pink: var(--coral-pink);
+  --color-goldenrod: var(--goldenrod);
+  --color-deep-saffron: var(--deep-saffron);
+  --color-pale-green: var(--pale-green);
+  --color-blue-gray: var(--blue-gray);
+  --font-stolzl: var(--font-stolzl);
+
+  --color-tag-default: var(--tag-default);
+  --color-card-default: var(--card-default);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #030712;
+    --foreground: #ededed;
+
+    /* Tags */
+    --tag-default: rgba(var(--ultralight-gray), 0.1);
+    --card-default: var(--blue-gray);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.line-extension:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 125px;
+  background: var(--foreground);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
