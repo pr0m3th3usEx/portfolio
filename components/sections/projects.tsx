@@ -1,4 +1,4 @@
-import { Card, CardContent } from '../ui/card';
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +7,29 @@ import {
   CarouselPrevious,
 } from '../ui/carousel';
 import Tag from '../ui/tag';
+
+const PROJECTS = [
+  {
+    key: '1',
+    img: '/assets/projects/edamame.webp',
+  },
+  {
+    key: '2',
+    img: '/assets/projects/glowme.webp',
+  },
+  {
+    key: '3',
+    img: '/assets/projects/ramify.webp',
+  },
+  {
+    key: '4',
+    img: '/assets/projects/colas.webp',
+  },
+  {
+    key: '5',
+    img: '/assets/projects/sonik-swap.webp',
+  },
+] as const;
 
 export default function Projects() {
   return (
@@ -23,14 +46,17 @@ export default function Projects() {
         }}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index}>
+          {PROJECTS.map((p) => (
+            <CarouselItem key={p.key}>
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-video h-full items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
-                  </CardContent>
-                </Card>
+                <Image
+                  src={p.img}
+                  alt="Project Image"
+                  width={800}
+                  height={500}
+                  layout="responsive"
+                  className="rounded-lg"
+                />
               </div>
             </CarouselItem>
           ))}
