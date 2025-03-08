@@ -21,10 +21,11 @@ export default function Intro() {
       </div>
 
       <p className="text-xl">
-        Ciao 👋🏼 — I’m a software developer and designer based in Belgrade,
-        passionate about delivering high-quality digital products. My focus is
-        on crafting intuitive, user-centered software that empowers users and
-        drives meaningful change.
+        Hello 👋🏼 - Software Engineer Freelance, passionate about building SaaS
+        products and optimizing UI/UX. Former co-founder of Glowme, open-source
+        contributor, and Clean Code advocate. I help startups and businesses
+        with web & backend projects, ensuring scalability and performance.
+        Always looking for new challenges! 🚀
       </p>
     </>
   );
