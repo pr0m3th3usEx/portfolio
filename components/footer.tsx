@@ -15,7 +15,7 @@ export default function Footer() {
           you have questions, need advice, or just want to chat, don’t hesitate
           to reach out!
         </p>
-        <div className="z-0 flex gap-6">
+        <div className="flex gap-6">
           <Link href="#" className="hover:text-coral-pink">
             <GithubIcon width={24} height={24} />
           </Link>

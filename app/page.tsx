@@ -11,15 +11,15 @@ import Projects from '@/components/sections/projects';
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen max-w-screen flex-col">
+    <div className="relative flex min-h-screen w-full max-w-screen flex-col">
       <Header />
 
-      <div className="fixed bottom-0 z-0 flex w-full items-end justify-between px-8 pt-8">
+      <div className="invisible fixed bottom-0 z-0 flex w-full items-end justify-between px-8 pt-8 md:visible">
         <SocialNetworks />
         <EmailContact />
       </div>
 
-      <main className="mx-auto mt-16 flex w-[640px] flex-col gap-12 py-20">
+      <main className="z-0 mx-auto mt-16 flex w-full flex-col gap-12 px-4 py-20 md:w-[640px] md:px-0">
         <Intro />
         <Projects />
         <Expertise />

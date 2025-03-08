@@ -6,11 +6,11 @@ import NavigationBar from './navigation-bar';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 flex w-full justify-between px-8 pt-8">
+    <header className="flex w-full justify-between px-4 pt-8 md:fixed md:top-0 md:px-4">
       <NavigationBar />
 
       <div className="flex items-center gap-2">
-        <Button variant="default">
+        <Button variant="default" className="hidden md:flex">
           <Download size={12} />
           Resume
         </Button>
@@ -25,7 +25,7 @@ export default function Header() {
         </Tag>
         <Tag>
           16h38
-          <div className="bg-pale-green h-2 w-2 rounded-full"></div>
+          <div className="h-2 w-2 rounded-full bg-green-500"></div>
         </Tag>
       </div>
     </header>

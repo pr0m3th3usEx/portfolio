@@ -15,7 +15,7 @@ export default function Roles() {
               <h3>Independant contractor</h3>
               <Tag variant="success">
                 Open for collaboration
-                <div className="bg-pale-green h-2 w-2 rounded-full"></div>
+                <div className="h-2 w-2 rounded-full bg-green-500"></div>
               </Tag>
             </div>
             <p className="text-cool-gray text-sm font-light">

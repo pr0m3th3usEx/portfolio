@@ -10,7 +10,7 @@ const tagVariants = cva(
         default: 'bg-tag-default',
         outline: 'bg-transparent border border-foreground text-foreground',
         primary: 'bg-blue-500',
-        success: 'bg-pale-green/30',
+        success: 'bg-green-500/30',
         danger: 'bg-red-500',
         warning: 'bg-yellow-500',
       },
