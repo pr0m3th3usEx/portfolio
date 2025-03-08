@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${stolzl.variable}`}>{children}</body>
+      <body className={`${stolzl.variable} ${stolzl.className}`}>
+        {children}
+      </body>
     </html>
   );
 }

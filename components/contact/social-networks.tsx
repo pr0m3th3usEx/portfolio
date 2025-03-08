@@ -11,7 +11,7 @@ export default function SocialNetworks({
 }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
-      className={`line-extension flex w-fit flex-col items-center gap-3 px-3 ${className}`}
+      className={`line-extension flex w-fit flex-col items-center gap-3 ${className}`}
       {...props}
     >
       <div className="flex flex-col items-center gap-6">
