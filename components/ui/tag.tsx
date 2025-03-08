@@ -3,13 +3,14 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/utils';
 
 const tagVariants = cva(
-  'w-fit h-fit flex items-center gap-1 rounded-lg text-xs',
+  'w-fit h-fit flex items-center gap-1 rounded-lg text-xs font-light',
   {
     variants: {
       variant: {
         default: 'bg-tag-default',
+        outline: 'bg-transparent border border-foreground text-foreground',
         primary: 'bg-blue-500',
-        success: 'bg-green-500',
+        success: 'bg-pale-green/30',
         danger: 'bg-red-500',
         warning: 'bg-yellow-500',
       },
