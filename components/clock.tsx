@@ -4,6 +4,9 @@ import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
 import Tag from './ui/tag';
 import { useEffect, useState } from 'react';
+import { format as formatTZ } from 'date-fns-tz';
+import { TZDate } from '@date-fns/tz';
+import { config } from '@/config/constants';
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -24,22 +27,24 @@ const usePageVisibility = (onRefocus: () => void) => {
 };
 
 export default function Clock() {
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState(
+    new TZDate(new Date(), config.location.timezone),
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentTime(new Date());
+      setCurrentTime(new TZDate(new Date(), config.location.timezone));
     }, 1000);
     return () => clearInterval(interval);
   }, []);
 
   usePageVisibility(() => {
-    setCurrentTime(new Date());
+    setCurrentTime(new TZDate(new Date(), config.location.timezone));
   });
 
   return (
     <Tag>
-      {dayjs(currentTime).tz('Europe/Paris').format('HH:mm')}
+      {formatTZ(currentTime, 'HH:mm')}
       <div className="h-2 w-2 rounded-full bg-green-500"></div>
     </Tag>
   );
