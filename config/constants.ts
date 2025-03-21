@@ -23,15 +23,11 @@ export const config = {
   resumeUrl: env.get('NEXT_PUBLIC_RESUME_URL').required().asUrlString(),
   email: env.get('NEXT_PUBLIC_EMAIL').required().asString(),
   location: {
-    city: env
-      .get('NEXT_PUBLIC_CITY')
-      .required()
-      .default('Los Angeles')
-      .asString(),
+    city: env.get('NEXT_PUBLIC_CITY').required().default('Paris').asString(),
     timezone: env
       .get('NEXT_PUBLIC_CITY_TZ')
       .required()
-      .default('America/Los_Angeles')
+      .default('Europe/Paris')
       .asString(),
   },
   schedule: {
