@@ -26,7 +26,8 @@ const tagVariants = cva(
 );
 
 interface TagProps
-  extends React.BaseHTMLAttributes<HTMLDivElement>,
+  extends
+    React.BaseHTMLAttributes<HTMLDivElement>,
     VariantProps<typeof tagVariants> {}
 
 const Tag = React.forwardRef<HTMLDivElement, TagProps>((props, ref) => {
