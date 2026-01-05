@@ -34,7 +34,7 @@ export const config = {
     availableForWork: true,
     availableTime: {
       from: '09:00',
-      to: '21:00',
+      to: '22:00',
     },
   },
 };
