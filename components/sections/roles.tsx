@@ -36,6 +36,30 @@ export default function Roles() {
         <ExperienceCard>
           <div className="flex w-full items-center justify-between">
             <div className="flex grow flex-col gap-1">
+              <h3>Ida</h3>
+              <p className="text-cool-gray text-sm font-light">
+                Software Engineer
+              </p>
+            </div>
+            <p className="text-cool-gray text-sm font-light">2026</p>
+          </div>
+        </ExperienceCard>
+
+        <ExperienceCard>
+          <div className="flex w-full items-center justify-between">
+            <div className="flex grow flex-col gap-1">
+              <h3>Samouraï Coop</h3>
+              <p className="text-cool-gray text-sm font-light">
+                Software Engineer
+              </p>
+            </div>
+            <p className="text-cool-gray text-sm font-light">2025-2026</p>
+          </div>
+        </ExperienceCard>
+
+        <ExperienceCard>
+          <div className="flex w-full items-center justify-between">
+            <div className="flex grow flex-col gap-1">
               <h3>EDAMAME Technologies</h3>
               <p className="text-cool-gray text-sm font-light">
                 Software Engineer

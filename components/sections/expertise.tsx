@@ -11,9 +11,9 @@ export default function Expertise() {
         Expertise
       </Tag>
 
-      <Link href={config.calendarUrl} target="_blank">
+      <Link href={config.linkedinServiceUrl} target="_blank">
         <Card className="bg-card-default hover:bg-foreground hover:text-background cursor-pointer border-none shadow-none transition-colors duration-300">
-          <CardContent className="flex aspect-[16/6] flex-col items-center gap-6 p-3">
+          <CardContent className="flex aspect-16/6 flex-col items-center gap-6 p-3">
             <div className="flex w-full justify-between">
               <p>(001)</p>
               <h3 className="">Software development</h3>
