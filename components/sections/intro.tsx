@@ -19,14 +19,28 @@ export default function Intro() {
           className="rounded-full"
         />
       </div>
+      <div className="flex flex-col gap-2">
+        <p>
+          👋 I&apos;m Thomas, a freelance{' '}
+          <strong>Full-Stack Software Engineer</strong> specializing in building
+          🚀 modern, scalable web and 📱 mobile applications for startups and
+          growing companies.
+        </p>
 
-      <p className="text-xl">
-        Hello 👋🏼 - Software Engineer Freelance, passionate about building SaaS
-        products and optimizing UI/UX. Former co-founder of Glowme, open-source
-        contributor, and Clean Code advocate. I help startups and businesses
-        with web & backend projects, ensuring scalability and performance.
-        Always looking for new challenges! 🚀
-      </p>
+        <p>
+          🎓 I graduated from EPITECH Institute of Technology in 2024, and I've
+          been working as a freelance engineer for the past four years,
+          partnering with startups to 💡 design, 🛠️ build, and 📈 scale SaaS
+          products from idea to production.
+        </p>
+
+        <p>
+          🤝 Whether you need to 🚀 launch an MVP, ⚡ accelerate an existing
+          SaaS platform, 🏗️ modernize your architecture, or 💪 strengthen your
+          engineering team, I enjoy collaborating closely with founders and
+          product teams to deliver ✅ robust, production-ready solutions.
+        </p>
+      </div>
     </>
   );
 }
