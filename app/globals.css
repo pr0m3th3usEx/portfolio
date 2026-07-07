@@ -74,6 +74,8 @@
   :root {
 
     /* Tags */
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
     --tag-default: rgba(var(--ultralight-gray), 0.1);
     --card-default: var(--blue-gray);
   }

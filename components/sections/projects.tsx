@@ -73,8 +73,6 @@ export default function Projects() {
     });
   }, [api]);
 
-  console.log('progress', progress, 'current', current, 'count', count);
-
   return (
     <div className="relative flex flex-col gap-2">
       <Tag variant="outline" className="text-xs uppercase">

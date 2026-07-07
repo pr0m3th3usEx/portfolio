@@ -7,7 +7,7 @@ export default function Intro() {
         <div>
           <h1 className="text-base">Thomas Michel</h1>
           <h2 className="text-cool-gray text-sm font-light">
-            Software Engineer Freelance | ex-Founder @ Glowme
+            Software Engineer Freelance | ex-Startup Founder
           </h2>
         </div>
 
