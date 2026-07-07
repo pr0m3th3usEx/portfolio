@@ -19,7 +19,7 @@ export default function Home() {
         <EmailContact />
       </div>
 
-      <main className="z-0 mx-auto mt-16 flex w-full flex-col gap-12 px-4 py-20 md:w-[640px] md:px-0">
+      <main className="z-0 mx-auto mt-16 flex w-full flex-col gap-12 px-4 py-20 md:w-160 md:px-0">
         <Intro />
         <Projects />
         <Expertise />
